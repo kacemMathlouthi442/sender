@@ -1,6 +1,7 @@
 import asyncio
 from aiogram import Bot, Dispatcher, F
 import os
+from time import sleep
 from keepalive import keep_alive
 from random import randint
 
@@ -37,7 +38,7 @@ async def main_loop():
  🤖 [BOT](https://t.me/m9wdottp_bot)''',parse_mode='MarkdownV2')
         except Exception as e:
             print(f"❌ Error: {e}")
-        await asyncio.sleep(randint(300, 900))
+        sleep(randint(300, 900))
 
 
 if __name__ == "__main__":
