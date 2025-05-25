@@ -1,8 +1,11 @@
 import asyncio
 from aiogram import Bot, Dispatcher, F
 import os
+from keepalive import keep_alive
 from random import randint
 
+
+keep_alive()
 services = ['Marcus','zelle','Email','CIBC','CashApp','ApplePay','PayPal','BankofAmerica','Amazon','Gmail','wellsfargo','Venmo','citizens','Bank','CapitalOne','Coinbase','Afterpay','Visa','MasterCard','Facebook','WhatsApp','Instagram']
 
 bot = Bot(token=os.environ.get('token'))
