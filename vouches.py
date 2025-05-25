@@ -14,6 +14,7 @@ services = [
 ]
 
 bot = Bot(token=os.environ.get('token'))
+dp = Dispatcher()
 
 async def main_loop():
     while True:
