@@ -43,7 +43,7 @@ async def main_loop():
                 f"╰  Capture By: ---------\n"
                 f"🤖 [BOT](https://t.me/m9wdottp_bot)"
             )
-            await bot.send_message(chat_id='@M9WDOTP_vouche', text=msg2, parse_mode='MarkdownV2')
+            await bot.send_message(chat_id='@M9WDOTP_vouches', text=msg2, parse_mode='MarkdownV2')
         except Exception as e:
             print(f"❌ Error sending to channel 2: {e}")
 
