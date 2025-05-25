@@ -1,5 +1,5 @@
 import asyncio
-from aiogram import Bot
+from aiogram import Bot,Dispatcher
 import os
 from keepalive import keep_alive
 from random import randint
