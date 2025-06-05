@@ -38,20 +38,6 @@ async def main_loop():
         except Exception as e:
             print(f"❌ Error sending to channel 1: {e}")
 
-        try:
-            otp = ''.join([str(randint(0, 9)) for _ in range(6)])
-            service = services[randint(0, len(services)-1)]
-            msg2 = (
-                f"<b>📲 M9WD OTP BOT 📲 ┃ 𝗩𝗢𝗨𝗖𝗛𝗘𝗦 ☘️</b>\n"
-                f"➖➖➖➖➖➖\n"
-                f"╭  Service Name ➣ <b>{service}</b>\n"
-                f"⭐ OTP ➣ <code>{otp}</code> ✅\n"
-                f"╰  Capture By: ---------\n"
-                f"🤖 <a href='https://t.me/m9wdottp_bot'>BOT</a>"
-            )
-            await bot.send_message(chat_id='@M9WDOTP_vouches', text=msg2, parse_mode='HTML')
-        except Exception as e:
-            print(f"❌ Error sending to channel 2: {e}")
 
         await asyncio.sleep(randint(300, 900))
 
